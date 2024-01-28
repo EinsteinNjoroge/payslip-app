@@ -12,8 +12,8 @@
 /build
 
 # IDE
-*/.idea
-/android/.idea
+.idea
+android/.idea
 
 # misc
 .DS_Store
