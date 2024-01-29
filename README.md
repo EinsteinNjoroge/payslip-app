@@ -36,3 +36,13 @@ once the setup is done, you can now view the on Android and IOS simulators by ru
 
 To view the project on web, run `yarn start` and open [http://localhost:3000](http://localhost:3000) on your browser.
 The page will reload if you make edits.
+
+
+# Screen Recordings
+Web:  [Video Link](https://drive.google.com/file/d/1UCuLC6VGE9z-T4-SYGhIfXTlUg8s0lmZ/view)
+
+Android:  [Video Link](https://drive.google.com/file/d/1RzWaTo5_HaGzTyDJRp6DMM9aPFGX6lNm/view)
+
+Android (Landscape):  [Video Link](https://drive.google.com/file/d/1THIjRbDmoR6aoXLnyuu9lxIi8-_cwcxV/view)
+
+IOS:  [Video Link](https://drive.google.com/file/d/1X-SRnnrMH1Hxi39vzsDCq1ePtj3nuRKe/view)
