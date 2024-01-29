@@ -1,13 +1,13 @@
 import { App as CapacitorApp } from "@capacitor/app";
 import { Capacitor } from "@capacitor/core";
 
-async function confirmExit() {
+async function confirmExit(): Promise<boolean> {
   return window.confirm("Are you sure you want to exit?");
 }
 
 let timeout: NodeJS.Timeout;
 
-export const navigateBack = () => {
+export const navigateBack = (): void => {
   // debounce to prevent multiple call being executed in quick succession
   clearTimeout(timeout);
   timeout = setTimeout(async () => {
@@ -20,7 +20,7 @@ export const navigateBack = () => {
   }, 100);
 };
 
-export const handleNativeSwipeGestureForBackNavigation = () => {
+export const handleNativeSwipeGestureForBackNavigation = (): void => {
   if (Capacitor.getPlatform() === "ios") {
     document.addEventListener("touchstart", (touchStartEvent: TouchEvent) => {
       const startX = touchStartEvent.touches[0].clientX;

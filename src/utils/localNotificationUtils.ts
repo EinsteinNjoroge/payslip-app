@@ -10,7 +10,7 @@ import {
 export const showLocalNotification = async (
   notifications: LocalNotificationSchema[],
   onNotificationClick: (notificationAction: ActionPerformed) => void
-) => {
+): Promise<void> => {
   const options: ScheduleOptions = {
     notifications,
   };
@@ -26,4 +26,4 @@ export const showLocalNotification = async (
   }
 };
 
-export const generateID = () => Math.round(Math.random() * 10000);
+export const generateID = (): number => Math.round(Math.random() * 10000);

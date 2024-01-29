@@ -10,16 +10,16 @@ import {
   hasNotificationDisplayPermissions,
 } from "./permissionsUtils";
 
-const isWeb = Capacitor.getPlatform() === "web";
+const isWeb: boolean = Capacitor.getPlatform() === "web";
 
-const openFile = async (fileUri: string) => {
+const openFile = async (fileUri: string): Promise<void> => {
   await FileOpener.open({
     contentType: "application/pdf",
     filePath: fileUri,
   });
 };
 
-export const downloadFile = async (fileName: string) => {
+export const downloadFile = async (fileName: string): Promise<void> => {
   // Convert HTML element to canvas then print it on a pdf
   const cardElement: Element | null = document.querySelector("#payslip-info");
   const canvas = await html2canvas(cardElement as HTMLElement);

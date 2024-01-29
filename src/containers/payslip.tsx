@@ -14,17 +14,19 @@ function Payslip() {
 
   return (
     <>
-      {/* Show a back button in IOS */}
-      {Capacitor.getPlatform() === "ios" ? (
-        <button
-          className="mt-12 ml-2"
-          type="button"
-          onKeyDown={(e) => e.key === "Enter" && navigate("/")}
-          onClick={() => navigate("/")}
-        >
-          <img src={navigateBackIcon} className="w-6 m-2" alt="Back" />
-        </button>
-      ) : null}
+      {
+        /* Show a back navigation button in IOS */
+        Capacitor.getPlatform() === "ios" ? (
+          <button
+            className="mt-12 ml-2"
+            type="button"
+            onKeyDown={(e) => e.key === "Enter" && navigate("/")}
+            onClick={() => navigate("/")}
+          >
+            <img src={navigateBackIcon} className="w-6 m-2" alt="Back" />
+          </button>
+        ) : null
+      }
 
       <div className="container mx-auto p-4 mt-2">
         {payslip ? (
