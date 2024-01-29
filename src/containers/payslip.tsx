@@ -10,7 +10,7 @@ function Payslip() {
   const payslip = mockPayslips.find((slip) => slip.id === id) || null;
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 pt-16">
       {payslip ? (
         <PayslipInformationCard
           showDownloadBtn

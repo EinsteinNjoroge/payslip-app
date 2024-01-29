@@ -4,19 +4,14 @@ import { App as CapacitorApp } from "@capacitor/app";
 
 import Payslip from "./containers/payslip";
 import Payslips from "./containers/payslips";
+import {
+  handleNativeSwipeGestureForBackNavigation,
+  navigateBack,
+} from "./utils/navigation";
 
 function App() {
-  CapacitorApp.addListener("backButton", () => {
-    console.log("Back swipe detected!");
-
-    if (window.history.length > 1) {
-      window.history.back();
-    } else {
-      // if (confirm('Are you sure you want to exit?')) {
-      CapacitorApp.exitApp();
-      // }
-    }
-  });
+  CapacitorApp.addListener("backButton", navigateBack);
+  handleNativeSwipeGestureForBackNavigation();
 
   return (
     <BrowserRouter>
