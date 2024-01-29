@@ -7,7 +7,7 @@ import Payslips from "./containers/payslips";
 import {
   handleNativeSwipeGestureForBackNavigation,
   navigateBack,
-} from "./utils/navigation";
+} from "./utils/navigationUtils";
 
 function App() {
   CapacitorApp.addListener("backButton", navigateBack);

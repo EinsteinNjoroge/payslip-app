@@ -1168,6 +1168,11 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@capacitor-community/file-opener@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@capacitor-community/file-opener/-/file-opener-1.0.5.tgz#bfb5fe97e6d54478f17c5d5ba8506bb695ad1e3e"
+  integrity sha512-OYR0+MXkp81z9cAyRfFkwJdvRzklVzxWqSzDBkBL87fB2jTD7m2Z2N84m8enUxQ+v96ESf+GZ2S4JAwzLimM+A==
+
 "@capacitor/android@^5.6.0":
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@capacitor/android/-/android-5.6.0.tgz#62a5e4697466beed4265da6f3939b42e8f00e642"
@@ -1195,11 +1200,6 @@
     sharp "0.32.6"
     tslib "2.6.2"
     yargs "17.7.2"
-
-"@capacitor/browser@^5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@capacitor/browser/-/browser-5.1.0.tgz#2389638c09716d815765f9622b5f3c71e21d7b6f"
-  integrity sha512-7togqchk2Tvq4SmLaWhcrd4x48ES/GEZsceM+29aun7WhxQEVcDU0cJsVdSU2LNFwNhWgPV2GW90etVd1B3OdQ==
 
 "@capacitor/cli@^5.3.0", "@capacitor/cli@^5.6.0":
   version "5.6.0"
@@ -1240,6 +1240,11 @@
   version "5.6.0"
   resolved "https://registry.yarnpkg.com/@capacitor/ios/-/ios-5.6.0.tgz#c2776061526edf725acd67dd214c2fd87236a030"
   integrity sha512-iswpOcD5us10hIF5zS4w6k/ekW0A+2pXhDV4AHOBXR4VOkOMI8QJaavgl9JvZ/NVvVNJdEN2rOKCMNh4AH08sw==
+
+"@capacitor/local-notifications@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@capacitor/local-notifications/-/local-notifications-5.0.6.tgz#9684dbd7086e325e61b9297569ee9c06e5b8d8f9"
+  integrity sha512-DB+ZBjv3Ri/0mtSzjMxLMHNGfg5m615ewDfQxp++mu7pYUM1RkxfSiigw73+PlZXDow1YNQJRlzTkwEKs6Pf+g==
 
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
