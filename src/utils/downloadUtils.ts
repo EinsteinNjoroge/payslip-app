@@ -25,7 +25,7 @@ export const downloadFile = async (fileName: string) => {
   const canvas = await html2canvas(cardElement as HTMLElement);
   const imgData = canvas.toDataURL("image/png");
   const pdf = new JsPDF();
-  pdf.addImage(imgData, 0, 0, 210, 80);
+  pdf.addImage(imgData, 0, 0, 210, isWeb ? 40 : 90);
 
   // Download the PDF
   if (isWeb) {

@@ -12,6 +12,9 @@ const config: CapacitorConfig = {
       iconColor: "#488AFF",
     },
   },
+  ios: {
+    contentInset: 'always',
+  },
 };
 
 export default config;
